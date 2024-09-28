@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resume-mern-depl
+  namespace: rezi-mean
+spec:
+  selector:
+    matchLabels:
+      app: rezi-mern-app
+  template:
+    metadata:
+      labels:
+        app: rezi-mern-app
+    spec:
+      containers:
+      - name: rezi-mean
+        image: vulhub/wordpress
+        #975050024946.dkr.ecr.ap-northeast-2.amazonaws.com/resume-ai-frontend:latest
+        ports:
+        - containerPort: 4200

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rezi-ai-backend-service
+  namespace: rezi-ai-backend-n
+spec:
+  type: LoadBalancer
+  selector:
+    app: rezi-ai-backend
+  ports:
+  - port: 80
+    targetPort: 4292

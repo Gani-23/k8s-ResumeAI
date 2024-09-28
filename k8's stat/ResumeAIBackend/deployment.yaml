@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rezi-ai-backend-depl
+  namespace: rezi-ai-backend-n
+spec:
+  selector:
+    matchLabels:
+      app: rezi-ai-backend
+  template:
+    metadata:
+      labels:
+        app: rezi-ai-backend
+    spec:
+      containers:
+      - name: rezi-ai-backend
+        image: 975050024946.dkr.ecr.ap-northeast-2.amazonaws.com/resume_backend:latest
+        ports:
+        - containerPort: 4292
