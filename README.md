@@ -1,5 +1,4 @@
-# Project Name: YourProjectName
-
+# Project Name: ResumeAI
 ## Overview
 This project is a fork of [ResumeAI](https://github.com/UnpredictablePrashant/ResumeAI) that demonstrates how to set up a Dockerized application with CI/CD pipelines, Kubernetes deployments, and AWS ECR integration.
 
